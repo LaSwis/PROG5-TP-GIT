@@ -64,6 +64,5 @@ void
 detruire_fap(fap f)
 {
   if (f != NULL)
-      free(f);
-      detruire_fap(f);
-}
+      detruire_fap(f->prochain);
+      free(f);}
